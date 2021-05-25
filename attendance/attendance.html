@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<title>
+    Welcome to TakeMyattendance
+</title>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <style>
+        .formstyle {
+            padding-top: 5%;
+            padding-left: 25%;
+            display:inline-table; 
+            justify-content: center;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        form {
+            border: 5px solid #1ce23d;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 16px 8px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #4286f4;
+            color: white;
+            padding: 14px 0;
+            margin: 10px 0;
+            border: none;
+            cursor: grab;
+            width: 48%;
+        }
+        h3{
+            text-align: center;
+            color: #4286f4;
+        }
+        h1 {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .formcontainer {
+            text-align: center;
+            margin: 24px 50px 12px;
+        }
+
+        .container {
+            text-align: left;
+        }
+        #show{
+            color: hsl(0, 0%, 99%);
+            width: 20%;
+            cursor:alias;
+        }
+    </style>
+
+<body>
+    <h3 id="title">Title : </h3>
+    <h3 id="creater">Created by : </h3>
+    
+    <div class="formstyle">
+
+        <form method="POST" enctype="application/x-www-form-urlencoded">
+            <h1>Fill Your attendance</h1>
+            <div class="formcontainer">
+                <div class="container">
+                    <label for="name"><strong>Your Name</strong></label>
+                    <input id="name" type="text" placeholder="Enter Name" name="name" required>
+                    <label for="prn"><strong>PRN No</strong></label>
+                    <input id="prn" type="text" placeholder="Enter PRN" name="prn" required>
+                </div>
+                <button type="submit" id="create"><strong>DONE</strong></button>
+        </form>
+
+    </div>
+    <br>
+    <button id = "show" type="submit">Show Reponses</button>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./attendance.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</body>
+
+
+</head>
+
+</html>

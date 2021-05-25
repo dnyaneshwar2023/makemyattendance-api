@@ -1,0 +1,84 @@
+<html>
+
+
+<title>
+    Welcome to TakeMyattendance
+</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<style>
+    body {
+        padding-top: 5%;
+        padding-left: 25%;
+        display: inline-table;
+        justify-content: center;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 15px;
+    }
+
+    form {
+        border: 5px solid #1ce23d;
+        padding-bottom: 20%;
+    }
+
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 16px 8px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        background-color: #4286f4;
+        color: white;
+        padding: 14px 0;
+        margin: 10px 0;
+        border: none;
+        cursor: grab;
+        width: 48%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    .formcontainer {
+        text-align: center;
+        margin: 24px 50px 12px;
+    }
+
+    .container {
+        text-align: left;
+    }
+</style>
+
+<body>
+
+    <form method="POST" enctype="application/x-www-form-urlencoded">
+        <h1>Create attendance Link</h1>
+        <div class="formcontainer">
+            <div class="container">
+                <label for="name"><strong>Your Name</strong></label>
+                <input id="name" type="text" placeholder="Enter Name" name="name" required>
+                <label for="title"><strong>Title</strong></label>
+                <input id="title" type="text" placeholder="Enter Title" name="title" required>
+            </div>
+            <button type="submit" id="create"><strong>CREATE</strong></button>
+    </form>
+
+
+
+    <script src="./create.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</body>
+
+</html>
