@@ -1,7 +1,7 @@
 # make-attendence-api
 
  # deployed at : 
-<h2><a href="https://makemyattendence.herokuapp.com">https://makemyattendence.herokuapp.com</a></h2>
+<h2><a href="https://makemyattendance.herokuapp.com">https://makemyattendence.herokuapp.com</a></h2>
 
 <img src="./snaps/attendence.png">
 <br>
